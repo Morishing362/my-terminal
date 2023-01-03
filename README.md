@@ -7,5 +7,4 @@ How to setup my terminal
 1. install tide for fish
 1. add terminal theme for tide
 
-## vim
-1. coc
+## nvim
