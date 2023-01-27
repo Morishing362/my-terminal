@@ -48,7 +48,9 @@ Copy `.tmux.conf`
 `:PlugInstall` on nvim
 
 #### Install CoC essentials
-`CocInstall [plugin name]`
+- nodejs
+- Python3, pip3
+- `CocInstall [plugin name]`
 
 #### Install language servers
 - C++ : clangd
