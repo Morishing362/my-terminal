@@ -47,13 +47,17 @@ Copy `.tmux.conf`
 #### Install plugins
 `:PlugInstall` on nvim
 
-#### Install CoC essentials
+#### CoC essentials
+- `:CocInstall [plugin name]`
+- `:CocConfig`
+
+#### Providers
 - nodejs
-- Python3, pip3
-- `CocInstall [plugin name]`
+- Python3
 
 #### Install language servers
-- C++ : clangd
-- Dart: Flutter
-- Rust: rust-analyzer 
+- JS/TS: npm
+- C++  : clangd
+- Dart : Flutter
+- Rust : rust-analyzer 
 
