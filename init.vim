@@ -38,9 +38,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'nvim-telescope/telescope.nvim'
 
   " Color scheme
-  Plug 'arcticicestudio/nord-vim' " nord
-  Plug 'projekt0n/github-nvim-theme' " github
-  Plug 'morhetz/gruvbox' " gruvbox
+  Plug 'rafi/awesome-vim-colorschemes'
   Plug 'johnstef99/vim-nerdtree-syntax-highlight' " forked
 call plug#end()
 
