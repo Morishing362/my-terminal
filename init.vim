@@ -12,6 +12,7 @@ set cursorline
 
 set encoding=UTF-8
 
+set termguicolors
 
 call plug#begin('~/.vim/plugged')
   " Language support
