@@ -119,7 +119,7 @@ vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
-vim.o.smartindent = true
+-- vim.o.smartindent = true
 vim.o.cursorline = true
 
 -- Use terminal color pallet
@@ -151,7 +151,7 @@ vim.wo.signcolumn = 'yes'
 
 -- Set colorscheme
 vim.o.termguicolors = true
-vim.cmd [[colorscheme onedark]]
+vim.cmd [[colorscheme gruvbox]]
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -187,16 +187,20 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 require('lualine').setup {
   options = {
     icons_enabled = false,
-    theme = 'onedark',
+    theme = 'gruvbox',
     component_separators = '|',
     section_separators = '',
   },
 }
 
 -- File tree empty setup using defaults
-require("nvim-tree").setup()
-vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>', {})
-vim.keymap.set('n', '<leader>f', ':NvimTreeFindFile<CR>', {})
+require("nvim-tree").setup({
+  view = {
+    side = "right"
+  }
+})
+vim.keymap.set('n', '<leader>tt', ':NvimTreeToggle<CR>', {})
+vim.keymap.set('n', '<leader>tf', ':NvimTreeFindFile<CR>', {})
 
 -- Enable Comment.nvim
 require('Comment').setup()
@@ -493,3 +497,6 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+-- The line beneath this is called `modeline`. See `:help modeline`
+-- vim: ts=2 sts=2 sw=2 et
