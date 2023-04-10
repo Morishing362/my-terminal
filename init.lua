@@ -69,6 +69,12 @@ require('packer').startup(function(use)
   -- Gruvbox colorscheme
   use 'ellisonleao/gruvbox.nvim'
 
+  -- Nord colorscheme
+  use 'arcticicestudio/nord-vim'
+
+  -- Github colorscheme
+  use({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+
   -- Fuzzy Finder (files, lsp, etc)
   use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }
 

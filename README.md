@@ -6,7 +6,11 @@ How to setup my development environment
 #### Install tmux
 `sudo apt install tmux`
 
-#### Set Tmux as default terminal
+
+#### Tmux config
+Copy `.tmux.conf`
+
+#### Option: Set Tmux as default terminal
 Copy this in `.bashrc`
 ```sh
 # Tmux as default
@@ -14,9 +18,6 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
 fi
 ```
-
-#### Tmux config
-Copy `.tmux.conf`
 
 ## Fish
 
@@ -29,9 +30,6 @@ Copy `.tmux.conf`
 #### Install tide
 `fisher install IlanCosman/tide@v5`
 
-#### Add your favarite terminal theme
-[Nord](https://github.com/arcticicestudio/nord-gnome-terminal) is reccomended
-
 #### Copy config.fish
 
 ## Neovim
@@ -39,25 +37,5 @@ Copy `.tmux.conf`
 #### Install Neovim
 `sudo apt install neovim`
 
-#### Install Plug
-`sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
-
-#### Copy `init.vim`
-
-#### Install plugins
-`:PlugInstall` on nvim
-
-#### CoC essentials
-- `:CocInstall [plugin name]`
-- `:CocConfig`
-
-#### Providers
-- nodejs
-- Python3
-
-#### Install language servers
-- JS/TS: npm
-- C++  : clangd
-- Dart : Flutter
-- Rust : rust-analyzer 
+#### Copy init.lua
 
