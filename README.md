@@ -36,6 +36,5 @@ fi
 
 #### Install Neovim
 `sudo apt install neovim`
-
-#### Copy init.lua
+Start with https://github.com/nvim-lua/kickstart.nvim
 
