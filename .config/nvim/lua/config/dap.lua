@@ -8,6 +8,7 @@ end
 
 local dap, dapui = require("dap"), require("dapui")
 
+-- C/C++/Rust dap adapter
 dap.adapters.codelldb = {
   type = 'server',
   port = "${port}",
