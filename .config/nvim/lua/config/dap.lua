@@ -12,6 +12,7 @@ dap.adapters.codelldb = {
   type = 'server',
   port = "${port}",
   executable = {
+    -- Use your absolute path to codelldb
     command = '/home/shingo.morishita@toyotaconnected.com/development/codelldb-x86_64-linux/extension/adapter/codelldb',
     args = { "--port", "${port}" },
   }
