@@ -196,6 +196,13 @@ require('lazy').setup({
     'windwp/nvim-autopairs',
     event = "InsertEnter",
     opts = {} -- this is equalent to setup({}) function
+  },
+
+  { -- Markdown viewer
+    'iamcco/markdown-preview.nvim',
+    config = function()
+      vim.fn["mkdp#util#install"]()
+    end,
   }
 
 }, {})
