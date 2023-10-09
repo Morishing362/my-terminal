@@ -34,6 +34,9 @@ vim.o.smartcase = true
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'
 
+-- Popup dialog max height
+vim.o.pumheight = 12
+
 -- Decrease update time
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
