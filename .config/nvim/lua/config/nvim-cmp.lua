@@ -51,3 +51,6 @@ cmp.event:on(
   'confirm_done',
   cmp_autopairs.on_confirm_done()
 )
+
+-- Luasnip react.js/next.js settings
+luasnip.filetype_extend("typescriptreact", { "html" })
