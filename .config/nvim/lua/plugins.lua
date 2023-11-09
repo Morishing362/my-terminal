@@ -120,19 +120,13 @@ require('lazy').setup({
     },
   },
 
-  -- Colorschems
-  {
-    -- 'Mofiqul/vscode.nvim',
-    -- 'navarasu/onedark.nvim',
-    -- 'ellisonleao/gruvbox.nvim',
-    'sainnhe/everforest',
-    -- 'catppuccin/nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'everforest'
-    end,
-  },
-
+  'Mofiqul/vscode.nvim',
+  'navarasu/onedark.nvim',
+  'ellisonleao/gruvbox.nvim',
+  'sainnhe/gruvbox-material',
+  'lifepillar/vim-gruvbox8',
+  'sainnhe/everforest',
+  'AlexvZyl/nordic.nvim',
 
   {
     -- Set lualine as statusline
@@ -141,7 +135,6 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'everforest',
         component_separators = '|',
         section_separators = '',
       },
