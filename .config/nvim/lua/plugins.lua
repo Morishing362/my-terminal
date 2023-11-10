@@ -120,6 +120,7 @@ require('lazy').setup({
     },
   },
 
+  -- All solorscheme
   'Mofiqul/vscode.nvim',
   'navarasu/onedark.nvim',
   'ellisonleao/gruvbox.nvim',
@@ -128,18 +129,8 @@ require('lazy').setup({
   'sainnhe/everforest',
   'AlexvZyl/nordic.nvim',
 
-  {
-    -- Set lualine as statusline
-    -- See `:help lualine.txt`
-    'nvim-lualine/lualine.nvim',
-    opts = {
-      options = {
-        icons_enabled = false,
-        component_separators = '|',
-        section_separators = '',
-      },
-    },
-  },
+  -- Lualine
+  'nvim-lualine/lualine.nvim',
 
   {
     "lukas-reineke/indent-blankline.nvim",
