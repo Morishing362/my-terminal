@@ -59,6 +59,14 @@ require('lazy').setup({
     },
   },
 
+  {
+    'nvimdev/lspsaga.nvim',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter', -- optional
+      'nvim-tree/nvim-web-devicons'      -- optional
+    }
+  },
+
   -- Mason null-ls
   {
     "jay-babu/mason-null-ls.nvim",
@@ -123,7 +131,6 @@ require('lazy').setup({
   -- All solorscheme
   'Mofiqul/vscode.nvim',
   'navarasu/onedark.nvim',
-  'ellisonleao/gruvbox.nvim',
   'sainnhe/gruvbox-material',
   'lifepillar/vim-gruvbox8',
   'sainnhe/everforest',
@@ -135,7 +142,6 @@ require('lazy').setup({
   {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
-    opts = {},
   },
 
   -- "gc" to comment visual regions/lines
