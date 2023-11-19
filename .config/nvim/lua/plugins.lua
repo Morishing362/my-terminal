@@ -128,7 +128,7 @@ require('lazy').setup({
     },
   },
 
-  -- All solorscheme
+  -- All solorschemes
   'Mofiqul/vscode.nvim',
   'navarasu/onedark.nvim',
   'sainnhe/gruvbox-material',
