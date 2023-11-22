@@ -22,3 +22,4 @@ How to setup my development environment
 #### Install Neovim
 `sudo apt install neovim`
 
+install ripgrep
