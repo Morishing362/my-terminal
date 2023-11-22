@@ -60,11 +60,14 @@ require('lazy').setup({
   },
 
   {
-    'nvimdev/lspsaga.nvim',
+    -- Highlight, edit, and navigate code
+    'nvim-treesitter/nvim-treesitter',
+    commit = 'f2778bd1a28b74adf5b1aa51aa57da85adfa3d16',
     dependencies = {
-      'nvim-treesitter/nvim-treesitter', -- optional
-      'nvim-tree/nvim-web-devicons'      -- optional
-    }
+      commit = '35a60f093fa15a303874975f963428a5cd24e4a0',
+      'nvim-treesitter/nvim-treesitter-textobjects',
+    },
+    build = ':TSUpdate',
   },
 
   -- Mason null-ls
