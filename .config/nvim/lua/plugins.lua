@@ -60,6 +60,17 @@ require('lazy').setup({
   },
 
   {
+    'nvimdev/lspsaga.nvim',
+    config = function()
+      require('lspsaga').setup({})
+    end,
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter', -- optional
+      'nvim-tree/nvim-web-devicons'      -- optional
+    }
+  },
+
+  {
     -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     commit = 'f2778bd1a28b74adf5b1aa51aa57da85adfa3d16',
